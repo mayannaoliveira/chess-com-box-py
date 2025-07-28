@@ -3,6 +3,7 @@ on:
   push:
     branches: master
   schedule:
+    workflow_dispatch:
     - cron: "0 */2 * * *"
 jobs:
   update-gist:
